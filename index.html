@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+<!--
+    CRAWLABILITY NOTES
+    - Primary content is server-delivered HTML, not JS-generated.
+    - Canonical, Open Graph, schema, robots and sitemap all use the final HTTPS host.
+    - Internal navigation uses normal crawlable <a href> links.
+  -->
+<!--
+    MEMOCEPT LOCAL IMAGE SETUP
+    Keep the /images folder beside this HTML file.
+    Review-package images and pricing-package images use separate filenames.
+    Replace image files only; no HTML image URL changes are required.
+  -->
+<title>Memocept® USA | Memory &amp; Focus Support</title>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="en-us" http-equiv="content-language"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1" name="robots"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1" name="bingbot"/>
+<meta content="Discover Memocept USA, a daily brain wellness supplement designed to support memory, focus and mental clarity. Explore its ingredients, serving information and available bottle packages." name="description"/>
+<meta content="Memocept, Memocept supplement, Memocept reviews, Memocept ingredients, Memocept benefits, Memocept memory support, Memocept focus support, buy Memocept" name="keywords"/>
+<meta content="Memocept" name="author"/>
+<meta content="US" name="geo.region"/>
+<meta content="United States" name="geo.placename"/>
+<meta content="#773693" name="theme-color"/>
+<link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link as="image" fetchpriority="high" href="images/hero.webp" rel="preload"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="Memocept® USA | Memory &amp; Focus Support" property="og:title"/>
+<meta content="Discover Memocept USA, a daily brain wellness supplement designed to support memory, focus and mental clarity. Explore its ingredients, serving information and available bottle packages." property="og:description"/>
+<meta content="https://memocept-usa.vercel.app/images/hero.webp" property="og:image"/>
+<meta content="Memocept" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Memocept® USA | Memory &amp; Focus Support" name="twitter:title"/>
+<meta content="Discover Memocept USA, a daily brain wellness supplement designed to support memory, focus and mental clarity. Explore its ingredients, serving information and available bottle packages." name="twitter:description"/>
+<meta content="https://memocept-usa.vercel.app/images/hero.webp" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700;800;900&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{
+      --primary:#773693;
+      --primary-dark:#5d2875;
+      --primary-deep:#421b57;
+      --primary-soft:#f5eff8;
+      --cta:#f05a24;
+      --cta-dark:#d84412;
+      --faq-blue:#087bc2;
+      --faq-cyan:#0bc5d7;
+      --green:#24a65a;
+      --gold:#f2b600;
+      --ink:#1f1b24;
+      --muted:#625d68;
+      --line:#e5e1eb;
+      --white:#fff;
+      --soft:#f7f7f8;
+      --shadow:0 16px 38px rgba(119,54,147,.12);
+      --max:1140px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:#fff;
+      font-family:"Source Sans 3",Arial,sans-serif;
+      line-height:1.62;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit}
+    p{font-size:17px}
+    .container{width:min(var(--max),calc(100% - 34px));margin:auto}
+    .section{padding:62px 0}
+    .section.alt{background:#f6f6f6}
+
+    h1,h2,h3,.nav-logo{
+      font-family:"Roboto Condensed",Arial,sans-serif;
+      letter-spacing:-.02em;
+    }
+
+    h2.section-title{
+      font-size:clamp(2rem,3.8vw,3.05rem);
+      line-height:1.05;
+      text-align:center;
+      margin:0 0 12px;
+      font-weight:800;
+    }
+
+    .section-lead{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 28px;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    /* NAV */
+    .navbar{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:var(--primary);
+      color:#fff;
+      box-shadow:0 5px 20px rgba(82,34,105,.18);
+    }
+
+    .nav-inner{
+      min-height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .nav-logo{
+      font-weight:900;
+      font-size:1.35rem;
+      color:#fff;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:23px;
+      font-family:"Roboto Condensed",sans-serif;
+      font-weight:700;
+      font-size:.94rem;
+    }
+
+    .nav-links a:hover{color:#ffe95e}
+
+    .nav-order{
+      background:#ffe54d;
+      color:#251500 !important;
+      border-radius:5px;
+      padding:9px 17px;
+      font-weight:900;
+    }
+
+    .hamburger{
+      display:none;
+      background:transparent;
+      color:#fff;
+      border:0;
+      font-size:1.5rem;
+      cursor:pointer;
+    }
+
+    /* HERO */
+    .hero{
+      padding:38px 0 26px;
+      background:#fff;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      align-items:center;
+      gap:52px;
+    }
+
+    .hero-product{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .hero-product img{
+      width:min(100%,520px);
+      max-height:440px;
+      object-fit:contain;
+      margin:auto;
+    }
+
+    .hero h1{
+      font-size:clamp(2.9rem,6vw,5.25rem);
+      line-height:.93;
+      margin:0 0 8px;
+      font-weight:900;
+      color:#111;
+    }
+
+    .hero-tagline{
+      color:#057cbc;
+      font-family:"Roboto Condensed",sans-serif;
+      font-size:1.38rem;
+      font-weight:800;
+      display:block;
+      margin-bottom:13px;
+    }
+
+    .hero p{
+      color:#38343b;
+      margin:0 0 13px;
+    }
+
+    .ticks{
+      padding:0;
+      margin:16px 0 0;
+      list-style:none;
+      display:grid;
+      gap:7px;
+    }
+
+    .ticks li{
+      display:flex;
+      align-items:flex-start;
+      gap:9px;
+      font-weight:600;
+    }
+
+    .ticks li::before{
+      content:"✓";
+      color:var(--green);
+      font-weight:900;
+    }
+
+    .hero-cta{
+      text-align:center;
+      padding:18px 0 30px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:6px;
+      padding:14px 27px;
+      font-family:"Roboto Condensed",sans-serif;
+      font-weight:900;
+      font-size:1rem;
+      transition:.18s ease;
+    }
+
+    .btn:hover{transform:translateY(-2px)}
+
+    .btn-orange{
+      color:#fff;
+      background:linear-gradient(180deg,#f47743,#e64d18);
+      box-shadow:0 8px 18px rgba(224,75,20,.25);
+      min-width:320px;
+    }
+
+    /* REVIEWS */
+    .reviews{padding:15px 0 52px}
+
+    .reviews h2{
+      text-align:center;
+      margin:0;
+      font-size:2.05rem;
+      line-height:1.06;
+    }
+
+    .ugc-strip{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+      max-width:860px;
+      margin:22px auto 36px;
+    }
+
+    .ugc-strip img{
+      width:100%;
+      aspect-ratio:1.45/1;
+      object-fit:cover;
+      border-radius:2px;
+    }
+
+    .review-list{
+      display:grid;
+      gap:25px;
+      max-width:900px;
+      margin:auto;
+    }
+
+    .review-card{
+      display:grid;
+      grid-template-columns:112px 1fr;
+      gap:22px;
+      align-items:start;
+    }
+
+    .review-avatar{
+      width:96px;
+      height:96px;
+      border-radius:50%;
+      object-fit:cover;
+      margin:4px auto 0;
+      box-shadow:0 4px 14px rgba(0,0,0,.16);
+    }
+
+    .review-card h3{
+      margin:0 0 2px;
+      font-size:1.25rem;
+      color:#0088c7;
+      font-weight:900;
+    }
+
+    .review-meta{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-bottom:7px;
+      font-size:.9rem;
+    }
+
+    .stars{color:#f0ae00;letter-spacing:1px}
+    .verified{color:#e15423;font-weight:800}
+
+    .review-card p{
+      margin:0 0 7px;
+      color:#3a353d;
+      font-size:17px;
+    }
+
+    .review-bottom{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-top:8px;
+      color:#0479b5;
+      font-size:.9rem;
+      font-weight:700;
+    }
+
+    .review-bottom img{
+      width:105px;
+      height:78px;
+      object-fit:contain;
+    }
+
+    /* PRICING */
+    .pricing-band{
+      background:var(--primary);
+      color:#fff;
+      text-align:center;
+      padding:16px 12px;
+    }
+
+    .pricing-band h2{
+      margin:0;
+      font-size:1.55rem;
+      line-height:1.08;
+    }
+
+    .pricing-section{
+      padding:26px 0 34px;
+      background:#fff;
+    }
+
+    .pricing-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+      max-width:1110px;
+      margin:auto;
+      align-items:stretch;
+    }
+
+    .price-card{
+      border:3px solid #9a6fbd;
+      border-radius:15px;
+      background:#fff;
+      padding:18px 16px 22px;
+      text-align:center;
+      box-shadow:0 9px 22px rgba(119,54,147,.12);
+      display:flex;
+      flex-direction:column;
+      min-height:640px;
+    }
+
+    .price-card.best{
+      background:linear-gradient(180deg,#8b4cb4,#5d2875);
+      border-color:#4b2061;
+      color:#fff;
+      transform:scale(1.035);
+      z-index:2;
+    }
+
+    .price-head{
+      font-family:"Roboto Condensed",sans-serif;
+      font-size:.92rem;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.03em;
+    }
+
+    .price-card.best .price-head{
+      font-size:1.08rem;
+      padding:4px 0;
+    }
+
+    .price-card h3{
+      margin:5px 0 0;
+      font-size:1.75rem;
+    }
+
+    .price-card.best h3{font-size:2rem}
+
+    .supply{
+      font-weight:700;
+      font-size:.9rem;
+      color:#6c6670;
+    }
+
+    .best .supply{color:#ded4f5}
+
+    .price-image-link{
+      display:block;
+      width:100%;
+      cursor:pointer;
+    }
+
+    .price-card img{
+      width:100%;
+      height:285px;
+      max-width:330px;
+      object-fit:contain;
+      margin:12px auto 8px;
+      transform:scale(1.04);
+      transform-origin:center;
+      transition:transform .18s ease;
+    }
+
+    .price-card.best img{
+      height:315px;
+      max-width:365px;
+      transform:scale(1.08);
+    }
+
+    .price-image-link:hover img{transform:scale(1.07)}
+    .price-card.best .price-image-link:hover img{transform:scale(1.11)}
+
+    .per-price{
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      gap:5px;
+      line-height:1;
+      margin:5px 0;
+    }
+
+    .per-price .amount{
+      font-family:"Roboto Condensed",sans-serif;
+      font-weight:900;
+      font-size:4.6rem;
+    }
+
+    .per-price .per{
+      font-size:.8rem;
+      font-weight:800;
+      padding-bottom:7px;
+      text-align:left;
+      line-height:1;
+    }
+
+    .save{
+      color:#946d00;
+      font-weight:900;
+      font-size:.88rem;
+      padding:7px 0;
+      border-top:1px dotted #887d8f;
+      border-bottom:1px dotted #887d8f;
+    }
+
+    .best .save{color:#ffe354;border-color:#bfaee6}
+
+    .guar{
+      font-weight:900;
+      font-size:.86rem;
+      padding:9px 0;
+    }
+
+    .buy-btn{
+      display:block;
+      background:#e8e8e8;
+      color:#171717;
+      font-family:"Roboto Condensed",sans-serif;
+      font-weight:900;
+      font-size:1.18rem;
+      padding:15px 12px;
+      border-radius:6px;
+      margin:9px 0 12px;
+    }
+
+    .best .buy-btn{background:#ffd51f}
+
+    .payment-row{
+      display:flex;
+      justify-content:center;
+      gap:4px;
+      margin-bottom:8px;
+      flex-wrap:wrap;
+    }
+
+    .pay{
+      background:#fff;
+      color:#25465e;
+      border:1px solid #d7d7d7;
+      border-radius:3px;
+      padding:3px 5px;
+      font-size:.62rem;
+      font-weight:900;
+    }
+
+    .total{
+      font-size:.9rem;
+      font-weight:800;
+      margin-top:auto;
+    }
+
+    .old{text-decoration:line-through;opacity:.55}
+    .ship{font-weight:900;margin-top:3px;font-size:.88rem}
+    .best .ship{color:#ffe354}
+
+    /* CONTENT */
+    .split{
+      display:grid;
+      grid-template-columns:420px 1fr;
+      gap:42px;
+      align-items:start;
+      max-width:1080px;
+      margin:auto;
+    }
+
+    .split img.main-photo{
+      width:100%;
+      border-radius:3px;
+      box-shadow:var(--shadow);
+    }
+
+    .content h2{
+      margin:0 0 14px;
+      font-size:2rem;
+      text-align:center;
+    }
+
+    .content h3{
+      font-size:1.15rem;
+      margin:19px 0 7px;
+    }
+
+    .content p{
+      margin:0 0 11px;
+      color:#373239;
+      font-size:17px;
+    }
+
+    .content ul{
+      margin:10px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:7px;
+    }
+
+    .content li{
+      display:flex;
+      gap:9px;
+      align-items:flex-start;
+      font-size:17px;
+    }
+
+    .content li::before{
+      content:"✓";
+      color:var(--green);
+      font-weight:900;
+      flex:0 0 auto;
+    }
+
+    .steps li::before{content:"➤";color:#111}
+
+    .ingredient-list{
+      list-style:none !important;
+      counter-reset:ing;
+    }
+
+    .ingredient-list li{
+      counter-increment:ing;
+      padding:8px 0;
+    }
+
+    .ingredient-list li::before{
+      content:counter(ing);
+      display:grid;
+      place-items:center;
+      width:24px;
+      height:24px;
+      border-radius:50%;
+      background:#18a94d;
+      color:#fff;
+      font-size:.8rem;
+      flex:0 0 24px;
+      margin-top:1px;
+    }
+
+    /* GUARANTEE */
+    .guarantee{
+      background:#f6f6f6;
+      padding:40px 0;
+    }
+
+    .guarantee-title{
+      text-align:center;
+      font-family:"Roboto Condensed",Arial,sans-serif;
+      color:#0080b8;
+      font-size:1.9rem;
+      font-weight:900;
+      line-height:1;
+      margin-bottom:20px;
+    }
+
+    .guarantee-grid{
+      display:grid;
+      grid-template-columns:300px 1fr;
+      gap:34px;
+      align-items:center;
+      max-width:980px;
+      margin:auto;
+    }
+
+    .guarantee-grid img{max-height:260px;margin:auto}
+    .guarantee-grid p{margin:0 0 10px;font-size:17px}
+    .cert-img{max-width:650px;margin:22px auto 0}
+
+    /* FAQ */
+    .faq-section{
+      background:linear-gradient(110deg,var(--faq-blue),var(--faq-cyan));
+      color:#fff;
+      padding:40px 0 44px;
+    }
+
+    .faq-section h2{
+      text-align:center;
+      margin:0 0 20px;
+      font-size:1.75rem;
+    }
+
+    .faq-list{
+      max-width:790px;
+      margin:auto;
+      display:grid;
+      gap:8px;
+    }
+
+    details{
+      background:#fff;
+      color:#17171b;
+      border-radius:4px;
+      overflow:hidden;
+    }
+
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding:11px 14px;
+      font-family:"Roboto Condensed",sans-serif;
+      font-weight:800;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";color:#555}
+    details[open] summary::after{content:"−"}
+    details p{margin:0;padding:0 14px 13px;color:#555;font-size:17px}
+
+    /* FOOTER */
+    .interlinks{
+      background:var(--primary);
+      color:#fff;
+      padding:24px 0;
+    }
+
+    .interlinks-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:8px 60px;
+      max-width:720px;
+      margin:auto;
+      padding:0;
+      list-style:none;
+    }
+
+    .interlinks a{font-size:.9rem}
+    .interlinks a::before{content:"• ";color:#fff}
+
+    footer{
+      background:#4b4b4b;
+      color:#e8e8e8;
+      text-align:center;
+      padding:30px 0;
+    }
+
+    footer p{
+      max-width:1000px;
+      margin:0 auto 10px;
+      font-size:.78rem;
+      line-height:1.5;
+      color:#dedede;
+    }
+
+    .copyright{margin-top:15px!important;font-weight:700}
+
+    .sticky-buy{
+      position:fixed;
+      left:0;right:0;bottom:0;
+      z-index:90;
+      display:none;
+      background:#fff;
+      border-top:1px solid #ddd;
+      padding:9px 12px;
+      box-shadow:0 -5px 18px rgba(0,0,0,.12);
+    }
+
+    .sticky-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+
+    .sticky-inner b{color:var(--primary);font-family:"Roboto Condensed",sans-serif}
+    .sticky-inner small{display:block;color:#777}
+
+    .sticky-inner a{
+      background:var(--cta);
+      color:#fff;
+      padding:10px 15px;
+      border-radius:4px;
+      font-weight:900;
+    }
+
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr;gap:20px}
+      .pricing-grid{grid-template-columns:1fr;max-width:430px}
+      .price-card{min-height:auto}
+      .price-card.best{transform:none}
+      .price-card img{height:300px;max-width:390px}
+      .price-card.best img{height:330px;max-width:410px}
+      .split{grid-template-columns:1fr;max-width:760px}
+      .split img.main-photo{max-width:430px;margin:auto}
+      .guarantee-grid{grid-template-columns:1fr;text-align:center}
+    }
+
+    @media(max-width:650px){
+      .container{width:min(var(--max),calc(100% - 22px))}
+      .nav-links{display:none}
+      .hamburger{display:block}
+
+      .nav-links.open{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        top:64px;
+        left:10px;
+        right:10px;
+        background:var(--primary);
+        padding:16px;
+        border-radius:0 0 7px 7px;
+      }
+
+      .hero{padding-top:24px}
+      .hero h1{font-size:3rem}
+      .hero-tagline{font-size:1.2rem}
+      .hero-product img{width:min(100%,430px);max-height:390px}
+      .btn-orange{min-width:0;width:100%}
+
+      .ugc-strip{grid-template-columns:repeat(2,1fr)}
+      .review-card{grid-template-columns:76px 1fr;gap:11px}
+      .review-avatar{width:68px;height:68px}
+      .review-bottom img{width:92px;height:68px}
+
+      .price-card img{height:260px;max-width:330px}
+      .price-card.best img{height:290px;max-width:350px}
+
+      .section{padding:48px 0}
+      .interlinks-grid{grid-template-columns:1fr;gap:7px}
+      .sticky-buy{display:block}
+      footer{padding-bottom:90px}
+    }
+  
+    /* AGGREGATE RATING */
+    .aggregate-rating-strip{
+      background:#fff;
+      padding:0 0 18px;
+    }
+    .aggregate-rating-inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      font-family:"Roboto Condensed",Arial,sans-serif;
+      color:#4b4b4b;
+      font-size:1.05rem;
+    }
+    .aggregate-rating-score{font-weight:900}
+    .aggregate-rating-stars{
+      color:#3f3f3f;
+      letter-spacing:1px;
+      font-size:1.1rem;
+      line-height:1;
+    }
+    .aggregate-rating-count{
+      font-weight:700;
+      color:#666;
+    }
+    @media(max-width:650px){
+      .aggregate-rating-inner{font-size:1rem;gap:6px}
+      .aggregate-rating-stars{font-size:1rem}
+    }
+
+  
+    .price-card{
+      overflow:hidden;
+    }
+    .price-image-link{
+      border-radius:10px;
+    }
+    .buy-btn,
+    .nav-order,
+    .sticky-inner a,
+    .btn-orange{
+      -webkit-tap-highlight-color:transparent;
+    }
+    .buy-btn:focus-visible,
+    .nav-order:focus-visible,
+    .sticky-inner a:focus-visible,
+    .btn-orange:focus-visible,
+    .price-image-link:focus-visible{
+      outline:3px solid #ffd51f;
+      outline-offset:3px;
+    }
+
+  
+    /* IMAGE LAYOUT FIX — mirrors the supplied reference template */
+    .ugc-strip img{
+      width:100%;
+      height:auto;
+      aspect-ratio:1.45/1;
+      object-fit:cover;
+      border-radius:3px;
+    }
+
+    .split img.main-photo{
+      width:100%;
+      height:auto;
+      max-height:none;
+      object-fit:contain;
+      border-radius:4px;
+      box-shadow:var(--shadow);
+    }
+
+    .guarantee-grid img{
+      width:auto;
+      height:auto;
+      max-width:100%;
+      max-height:265px;
+      object-fit:contain;
+      margin:auto;
+    }
+
+    .cert-img{
+      width:auto;
+      height:auto;
+      max-width:650px;
+      max-height:none;
+      object-fit:contain;
+      margin:22px auto 0;
+    }
+
+    @media(max-width:900px){
+      .split img.main-photo{
+        max-width:440px;
+        height:auto;
+        margin:auto;
+      }
+
+      .guarantee-grid img{
+        max-height:240px;
+      }
+
+      .cert-img{
+        max-width:100%;
+        height:auto;
+      }
+    }
+
+    @media(max-width:650px){
+      .ugc-strip img{
+        width:100%;
+        height:auto;
+        aspect-ratio:1.45/1;
+        object-fit:cover;
+      }
+
+      .split img.main-photo{
+        width:100%;
+        max-width:440px;
+        height:auto;
+      }
+
+      .guarantee-grid img{
+        max-width:220px;
+        max-height:220px;
+        height:auto;
+      }
+
+      .cert-img{
+        width:100%;
+        max-width:650px;
+        height:auto;
+      }
+    }
+
+  </style>
+<!--
+    SEARCH RATING MARKUP:
+    Visible: 5/5 ★★★★★ (95.3K) Reviews
+    Schema: ratingValue 5.0 / reviewCount 95311
+    Keep these values consistent and only use genuine review data.
+  -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "#website", "url": "", "name": "Memocept", "inLanguage": "en-US"}, {"@type": "WebPage", "@id": "#webpage", "url": "", "name": "Memocept® Official Site | Memory, Focus & Clearer Thinking Support", "description": "Memocept is a once-daily cognitive support supplement for adults who want help maintaining memory, focus, concentration, mental clarity, healthy circulation, and steady everyday mental performance.", "inLanguage": "en-US", "isPartOf": {"@id": "#website"}, "mainEntity": {"@id": "#product"}, "dateModified": "2026-08-29", "hasPart": [{"@id": "#faq"}]}, {"@type": "Product", "name": "Memocept", "url": "", "description": "Memocept is a once-daily cognitive support supplement for adults who want help maintaining memory, focus, concentration, mental clarity, healthy circulation, and steady everyday mental performance.", "brand": {"@type": "Brand", "name": "Memocept"}, "category": "Brain and Cognitive Support Supplement", "image": ["images/hero.webp"], "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "worstRating": "1", "reviewCount": "95311"}, "offers": [{"@type": "Offer", "url": "order/", "price": "158.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "description": "Memocept 2-bottle 60-day package"}, {"@type": "Offer", "url": "order/", "price": "294.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "description": "Memocept 6-bottle 180-day package"}, {"@type": "Offer", "url": "order/", "price": "207.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "description": "Memocept 3-bottle 90-day package"}], "@id": "#product", "mainEntityOfPage": {"@id": "#webpage"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Memocept right for me?", "acceptedAnswer": {"@type": "Answer", "text": "Memocept is designed for adults who want additional daily support for memory, focus, mental clarity, concentration, and everyday cognitive performance. The supplied material presents it as a simple one-capsule daily formula."}}, {"@type": "Question", "name": "Is Memocept safe?", "acceptedAnswer": {"@type": "Answer", "text": "Memocept is presented as a dietary supplement for daily use according to the product label. If you take medication, have a medical condition, are pregnant or nursing, or have questions about a specific ingredient, consult a qualified healthcare professional before use."}}, {"@type": "Question", "name": "How many bottles should I order?", "acceptedAnswer": {"@type": "Answer", "text": "The current package structure includes a 2-bottle 60-day supply, a 3-bottle 90-day supply, and a 6-bottle 180-day supply. The 6-bottle option has the lowest stated per-bottle price."}}, {"@type": "Question", "name": "What's the best way to take Memocept?", "acceptedAnswer": {"@type": "Answer", "text": "The supplied Memocept material recommends one capsule daily with water. Follow the directions on the product label you receive."}}, {"@type": "Question", "name": "Is this a one-time payment?", "acceptedAnswer": {"@type": "Answer", "text": "The supplied Memocept material describes the package purchase as a one-time payment rather than an automatic monthly renewal. Confirm the final checkout terms before completing your order."}}, {"@type": "Question", "name": "What if Memocept doesn't work for me?", "acceptedAnswer": {"@type": "Answer", "text": "The supplied offer states that Memocept is backed by a 60-day money-back guarantee. Follow the seller's current refund and return instructions if you decide it is not the right fit."}}, {"@type": "Question", "name": "What do I do next?", "acceptedAnswer": {"@type": "Answer", "text": "Choose the Memocept package that best matches your preferred length of use, review the current order details at checkout, and follow the product label directions once your order arrives."}}], "@id": "#faq"}]}</script>
+<link href="https://memocept-usa.vercel.app/" rel="canonical"/><meta content="https://memocept-usa.vercel.app/" property="og:url"/></head>
+<body>
+<header class="navbar">
+<div class="container nav-inner">
+<a class="nav-logo" href="#memocept-official-website">Memocept</a>
+<button aria-label="Open menu" class="hamburger" id="hamburger">☰</button>
+<nav class="nav-links" id="navMenu">
+<a href="#memocept-benefits">Benefits</a>
+<a href="#memocept-ingredients">Ingredients</a>
+<a href="#memocept-reviews">Reviews</a>
+<a href="#memocept-faq">FAQ</a>
+<a class="nav-order" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">Order Now</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section class="hero" id="memocept-official-website">
+<div class="container hero-grid">
+<div class="hero-product">
+<img alt="Memocept cognitive support supplement for focus memory and mental clarity" decoding="async" fetchpriority="high" height="720" loading="eager" src="images/hero.webp" title="Memocept Official Product" width="553"/>
+</div>
+<div class="hero-content">
+<h1>Memocept</h1>
+<span class="hero-tagline">Everyday Support for Memory, Focus &amp; Mental Clarity</span>
+<p><strong>Memocept</strong> is a once-daily cognitive support formula made for adults who want to stay mentally sharp, focused, and confident in the small details that matter throughout the day.</p>
+<p>Its formula combines the nutrients and amino acids highlighted in the supplied product material to support healthy circulation, normal nerve communication, concentration, mental energy, and everyday cognitive performance.</p>
+<ul class="ticks">
+<li>Supports everyday memory and confident recall</li>
+<li>Promotes focus and sustained concentration</li>
+<li>Supports clearer, more organized thinking</li>
+<li>Supports healthy circulation and nutrient delivery</li>
+<li>Promotes normal mental energy and alertness</li>
+<li>60 DAYS GUARANTEE</li>
+</ul>
+</div>
+</div>
+<div class="container hero-cta">
+<a class="btn btn-orange" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">Order Your Memocept Now →</a>
+</div>
+</section>
+<!-- VISIBLE AGGREGATE RATING -->
+<section aria-label="Memocept customer rating" class="aggregate-rating-strip">
+<div class="container aggregate-rating-inner">
+<strong class="aggregate-rating-score">5/5</strong>
+<span aria-label="5 out of 5 stars" class="aggregate-rating-stars">★★★★★</span>
+<span class="aggregate-rating-count">(95.3K) Reviews</span>
+</div>
+</section>
+<!-- REVIEWS -->
+<section class="reviews" id="memocept-reviews">
+<div class="container">
+<h2>Memocept: A Simple Daily Choice for Cognitive Wellness</h2>
+<div class="ugc-strip">
+<img alt="Memocept customer review one" decoding="async" loading="lazy" src="images/ugc-1.webp"/>
+<img alt="Memocept customer review two" decoding="async" loading="lazy" src="images/ugc-2.webp"/>
+<img alt="Memocept customer review three" decoding="async" loading="lazy" src="images/ugc-3.webp"/>
+<img alt="Memocept customer review four" decoding="async" loading="lazy" src="images/ugc-4.webp"/>
+</div>
+<div class="review-list">
+<article class="review-card">
+<img alt="Memocept customer Margaret review" class="review-avatar" decoding="async" height="500" loading="lazy" src="images/reviewer-1.webp" width="500"/>
+<div>
+<h3>“I feel clearer and more confident in my memory.”</h3>
+<div class="review-meta"><span class="stars">★★★★★</span><span class="verified">Verified Purchase</span></div>
+<p>I wanted something simple because small forgetful moments were beginning to interrupt my normal routine. By afternoon I sometimes felt mentally tired, and keeping track of appointments or recent details took more effort than I wanted.</p>
+<p>After making Memocept part of my daily routine, I felt more organized and mentally present. I find it easier to stay engaged in conversations, remember what I planned to do, and move through my day with more confidence.</p>
+<div class="review-bottom">
+<img alt="Memocept package" decoding="async" height="963" loading="lazy" src="images/review-package-6-bottles.webp" width="1199"/>
+<span><strong>Margaret W., Age 64</strong> — Seattle, Washington<br/>Purchased Memocept 6 Bottles Package</span>
+</div>
+</div>
+</article>
+<article class="review-card">
+<img alt="Memocept customer James review" class="review-avatar" decoding="async" height="1254" loading="lazy" src="images/reviewer-2.webp" width="1254"/>
+<div>
+<h3>“My concentration feels steadier throughout the day.”</h3>
+<div class="review-meta"><span class="stars">★★★★★</span><span class="verified">Verified Purchase</span></div>
+<p>I was getting frustrated with losing my train of thought while reading or planning errands. I could start one task, get distracted, and then need a moment to remember where I left off.</p>
+<p>Memocept has become an easy part of my morning. My thoughts feel more organized, and I feel better able to stay with a task until it is finished. That has made everyday responsibilities feel less mentally draining.</p>
+<div class="review-bottom">
+<img alt="Memocept package" decoding="async" height="959" loading="lazy" src="images/review-package-3-bottles.webp" width="943"/>
+<span><strong>James W., Age 62</strong> — Dallas, Texas<br/>Purchased Memocept 3 Bottles Package</span>
+</div>
+</div>
+</article>
+<article class="review-card">
+<img alt="Memocept customer Laura review" class="review-avatar" decoding="async" height="1254" loading="lazy" src="images/reviewer-3.webp" width="1254"/>
+<div>
+<h3>“I feel more alert, focused, and mentally present.”</h3>
+<div class="review-meta"><span class="stars">★★★★★</span><span class="verified">Verified Purchase</span></div>
+<p>I wanted daily support for focus and memory because I sometimes felt distracted in conversations and mentally worn out while managing my schedule.</p>
+<p>With consistent use, I feel better able to stay focused, recall recent details, and finish normal tasks without feeling as scattered. I like that Memocept fits into my routine without powders or a complicated schedule.</p>
+<div class="review-bottom">
+<img alt="Memocept package" decoding="async" height="963" loading="lazy" src="images/review-package-6-bottles.webp" width="1199"/>
+<span><strong>Laura H., Age 65</strong> — Richmond, Virginia<br/>Purchased Memocept 6 Bottles Package</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- PRICING BLOCK 1 -->
+<section class="pricing-band" id="buy-memocept">
+<h2>Claim Your Discounted Memocept<br/>Below For Huge Savings</h2><p class="package-intro" style="font-size:1.08rem;line-height:1.65;text-align:center;max-width:760px;margin:14px auto 24px;">Explore the bottle options below, pick a supply for your needs, and review checkout details before completing your order.</p>
+</section>
+<section class="pricing-section">
+<div class="container">
+<div class="pricing-grid">
+<article class="price-card">
+<div class="price-head">Basic Offer</div>
+<h3>2 Bottles</h3>
+<div class="supply">60 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 2 Bottles" decoding="async" height="1568" loading="lazy" src="images/pricing-package-2-bottles.webp" width="709"/>
+</a>
+<div class="per-price"><span class="amount">$79</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $200</div>
+<div class="guar">✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$358</span> $158</div>
+<div class="ship">+ $9.99 SHIPPING</div>
+</article>
+<article class="price-card best">
+<div class="price-head">BEST OFFER!</div>
+<h3>6 Bottles</h3>
+<div class="supply">180 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 6 Bottles" decoding="async" height="1628" loading="lazy" src="images/pricing-package-6-bottles.webp" width="704"/>
+</a>
+<div class="per-price"><span class="amount">$49</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $780</div>
+<div class="guar">✓ BIGGEST DISCOUNT<br/>✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$1074</span> $294</div>
+<div class="ship">+ FREE US SHIPPING</div>
+</article>
+<article class="price-card">
+<div class="price-head">Most Popular</div>
+<h3>3 Bottles</h3>
+<div class="supply">90 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 3 Bottles" decoding="async" height="1563" loading="lazy" src="images/pricing-package-3-bottles.webp" width="707"/>
+</a>
+<div class="per-price"><span class="amount">$69</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $330</div>
+<div class="guar">✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$537</span> $207</div>
+<div class="ship">+ FREE US SHIPPING</div>
+</article>
+</div>
+</div>
+</section>
+<!-- WHAT IS -->
+<section class="section alt" id="what-is-memocept">
+<div class="container content">
+<h2 class="section-title">What Is Memocept? Your Formula &amp; Routine Guide</h2>
+<div class="split">
+<img alt="Memocept cognitive support lifestyle image" class="main-photo" decoding="async" loading="lazy" src="images/what-is.webp"/>
+<div>
+<p>Explore a once-daily cognitive support supplement positioned for adults who value focus, clear thinking and steady everyday mental performance. Compare available packages below.</p>
+<p>Busy schedules, mental fatigue, and normal age-related changes can make it harder to stay organized or recall small details as quickly as before. Memocept is positioned as a convenient daily option for supporting the systems involved in alertness, circulation, nerve communication, and cognitive performance.</p>
+<p>The supplied formula highlights Niacin, Calcium, L-Arginine, L-Arginine AKG, L-Citrulline HCL, L-Citrulline Malate, and Beta-Alanine.</p>
+<p>Because it comes in a one-capsule daily format, Memocept is easy to fit alongside the basics that matter for long-term cognitive wellness, including regular activity, balanced nutrition, hydration, good sleep, and mentally engaging habits.</p>
+<p>The goal is straightforward: give adults an easy, consistent way to support a clearer, more focused, and more dependable everyday routine.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- BENEFITS -->
+<section class="section" id="memocept-benefits">
+<div class="container content">
+<h2 class="section-title">Why Adults Explore Memocept for Memory &amp; Focus</h2>
+<p><strong>Memocept benefits</strong> are centered on the cognitive skills adults use every day — remembering useful details, staying focused on a task, thinking clearly, and maintaining steady mental energy.</p>
+<ul>
+<li><span><strong>Supports Everyday Memory</strong> — Helps support recall of names, appointments, conversations, and useful daily details.</span></li>
+<li><span><strong>Promotes Stronger Focus</strong> — Supports attention during reading, conversations, work, errands, and everyday responsibilities.</span></li>
+<li><span><strong>Encourages Mental Clarity</strong> — Supports a clearer and more organized state of mind when managing normal decisions and tasks.</span></li>
+<li><span><strong>Supports Concentration</strong> — Helps support sustained attention when you want to remain engaged instead of mentally scattered.</span></li>
+<li><span><strong>Supports Healthy Circulation</strong> — The amino-acid blend is positioned around pathways involved in normal blood flow and nutrient delivery.</span></li>
+<li><span><strong>Promotes Mental Energy</strong> — Niacin contributes to normal energy metabolism, supporting everyday alertness and performance.</span></li>
+<li><span><strong>Supports Normal Nerve Function</strong> — Calcium contributes to normal nerve signaling and cellular communication.</span></li>
+<li><span><strong>Simple Daily Use</strong> — One capsule daily makes consistent cognitive support easier to maintain.</span></li>
+<li><span><strong>60-Day Guarantee</strong> — The supplied Memocept offer includes a 60-day money-back guarantee.</span></li>
+</ul>
+<p>For adults who want to make memory, focus, and mental clarity part of a consistent wellness routine, Memocept offers a simple once-daily option based on the supplied formula.</p>
+</div>
+</section>
+<!-- HOW IT WORKS -->
+<section class="section alt" id="how-does-memocept-work">
+<div class="container content">
+<h2 class="section-title">How Does Memocept Work?</h2>
+<p><strong>How does Memocept work?</strong> The formula takes a broader approach to cognitive support by combining ingredients associated with circulation, normal energy metabolism, nerve communication, concentration, and everyday mental performance.</p>
+<ul class="steps">
+<li><span><strong>Step 1: Supports Healthy Blood-Flow Pathways</strong><br/>L-Arginine and L-Citrulline are included to support the body's normal nitric-oxide and circulation pathways.</span></li>
+<li><span><strong>Step 2: Supports Normal Energy Metabolism</strong><br/>Niacin contributes to normal energy-yielding metabolism, helping support everyday alertness and mental stamina.</span></li>
+<li><span><strong>Step 3: Supports Normal Nerve Communication</strong><br/>Calcium contributes to normal nerve signaling and cellular communication throughout the body.</span></li>
+<li><span><strong>Step 4: Complements Focus &amp; Endurance Support</strong><br/>Beta-Alanine is included alongside the amino-acid blend as part of the formula's overall performance-support positioning.</span></li>
+<li><span><strong>Step 5: Brings Daily Cognitive Support Together</strong><br/>Consistent use provides a simple routine centered on memory, focus, mental clarity, concentration, circulation, and mental energy.</span></li>
+</ul>
+<p><strong>In simple terms:</strong> Memocept brings the supplied nutrients together in one daily capsule to support a steadier, clearer, and more focused cognitive wellness routine.</p>
+</div>
+</section>
+<!-- PRICING BLOCK 2: DUPLICATE THE SAME FULL 3-CARD BLOCK HERE -->
+<section class="pricing-band">
+<h2>Claim Your Discounted Memocept<br/>Below For Huge Savings</h2>
+</section>
+<section class="pricing-section">
+<div class="container">
+<!-- COPY THE EXACT SAME .pricing-grid FROM PRICING BLOCK 1 HERE -->
+<div class="pricing-grid">
+<article class="price-card">
+<div class="price-head">Basic Offer</div>
+<h3>2 Bottles</h3>
+<div class="supply">60 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 2 Bottles" decoding="async" height="1568" loading="lazy" src="images/pricing-package-2-bottles.webp" width="709"/>
+</a>
+<div class="per-price"><span class="amount">$79</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $200</div>
+<div class="guar">✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$358</span> $158</div>
+<div class="ship">+ $9.99 SHIPPING</div>
+</article>
+<article class="price-card best">
+<div class="price-head">BEST OFFER!</div>
+<h3>6 Bottles</h3>
+<div class="supply">180 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 6 Bottles" decoding="async" height="1628" loading="lazy" src="images/pricing-package-6-bottles.webp" width="704"/>
+</a>
+<div class="per-price"><span class="amount">$49</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $780</div>
+<div class="guar">✓ BIGGEST DISCOUNT<br/>✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$1074</span> $294</div>
+<div class="ship">+ FREE US SHIPPING</div>
+</article>
+<article class="price-card">
+<div class="price-head">Most Popular</div>
+<h3>3 Bottles</h3>
+<div class="supply">90 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 3 Bottles" decoding="async" height="1563" loading="lazy" src="images/pricing-package-3-bottles.webp" width="707"/>
+</a>
+<div class="per-price"><span class="amount">$69</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $330</div>
+<div class="guar">✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$537</span> $207</div>
+<div class="ship">+ FREE US SHIPPING</div>
+</article>
+</div>
+</div>
+</section>
+<!-- INGREDIENTS -->
+<section class="section" id="memocept-ingredients">
+<div class="container content">
+<h2 class="section-title">Memocept Ingredients</h2>
+<p><strong>Memocept ingredients</strong> include the nutrients and amino acids listed in the supplied product material, with the overall formula positioned around memory, focus, mental clarity, circulation, and everyday cognitive support.</p>
+<h3>Key Ingredients in Memocept:</h3>
+<ul class="ingredient-list">
+<li><span><strong>Niacin:</strong> Contributes to normal energy production and nervous system function, supporting the energy processes involved in everyday alertness and concentration.</span></li>
+<li><span><strong>Calcium:</strong> Contributes to normal nerve signaling and cellular communication throughout the body.</span></li>
+<li><span><strong>L-Arginine:</strong> An amino acid included in the formula for support of the body's normal nitric-oxide and circulation pathways.</span></li>
+<li><span><strong>L-Arginine AKG:</strong> Included alongside L-Arginine as part of the formula's circulation and performance-support blend.</span></li>
+<li><span><strong>L-Citrulline HCL:</strong> Included to complement the L-Arginine pathway and support the formula's healthy-circulation positioning.</span></li>
+<li><span><strong>L-Citrulline Malate:</strong> Another citrulline form used within the supplied amino-acid blend to complement circulation and performance support.</span></li>
+<li><span><strong>Beta-Alanine:</strong> Included as part of the formula's performance and endurance-support positioning.</span></li>
+</ul>
+<p>Together, these ingredients make up the Memocept formula described in the supplied material and support its overall focus on concentration, mental clarity, healthy circulation, and daily cognitive wellness.</p>
+</div>
+</section>
+<!-- GUARANTEE -->
+<section class="guarantee" id="memocept-guarantee">
+<div class="container">
+<div class="guarantee-title">
+        100% SATISFACTION<br/>60-DAY MONEY-BACK GUARANTEE
+      </div>
+<div class="guarantee-grid">
+<img alt="Memocept guarantee" decoding="async" loading="lazy" src="images/guarantee.webp"/>
+<div>
+<p>Your Memocept order is backed by the supplied <strong>60-day money-back guarantee</strong>, giving you time to see how the formula fits into your daily routine.</p>
+<p>Use Memocept according to the directions provided with your product and consider how well it supports the areas you care about most, such as focus, memory, clarity, and everyday mental performance.</p>
+<p>If you decide Memocept is not the right fit, follow the seller's current return and refund instructions within the stated guarantee period.</p>
+</div>
+</div>
+<img alt="Memocept quality badges" class="cert-img" decoding="async" loading="lazy" src="images/certification-badges.webp"/>
+</div>
+</section>
+<!-- FAQ -->
+<section class="faq-section" id="memocept-faq">
+<div class="container">
+<h2>Memocept Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary>Is Memocept right for me?</summary>
+<p>Memocept is designed for adults who want additional daily support for memory, focus, mental clarity, concentration, and everyday cognitive performance. The supplied material presents it as a simple one-capsule daily formula.</p>
+</details>
+<details>
+<summary>Is Memocept safe?</summary>
+<p>Memocept is presented as a dietary supplement for daily use according to the product label. If you take medication, have a medical condition, are pregnant or nursing, or have questions about a specific ingredient, consult a qualified healthcare professional before use.</p>
+</details>
+<details>
+<summary>How many bottles should I order?</summary>
+<p>The current package structure includes a 2-bottle 60-day supply, a 3-bottle 90-day supply, and a 6-bottle 180-day supply. The 6-bottle option has the lowest stated per-bottle price.</p>
+</details>
+<details>
+<summary>What’s the best way to take Memocept?</summary>
+<p>The supplied Memocept material recommends one capsule daily with water. For consistency, many people prefer taking it at approximately the same time each day. Always follow the directions on the product label you receive.</p>
+</details>
+<details>
+<summary>Is this a one-time payment?</summary>
+<p>The supplied Memocept material describes the package purchase as a one-time payment rather than an automatic monthly renewal. Confirm the final checkout terms before completing your order.</p>
+</details>
+<details>
+<summary>What if Memocept doesn’t work for me?</summary>
+<p>The supplied offer states that Memocept is backed by a 60-day money-back guarantee. Follow the seller's current refund and return instructions if you decide it is not the right fit.</p>
+</details>
+<details>
+<summary>What do I do next?</summary>
+<p>Choose the Memocept package that best matches your preferred length of use, review the current order details at checkout, and follow the product label directions once your order arrives.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- PRICING BLOCK 3 -->
+<section class="pricing-band" id="order-memocept">
+<h2>Claim Your Discounted Memocept<br/>Below For Huge Savings</h2>
+</section>
+<section class="pricing-section">
+<div class="container">
+<!-- COPY THE EXACT SAME .pricing-grid FROM PRICING BLOCK 1 HERE -->
+<div class="pricing-grid">
+<article class="price-card">
+<div class="price-head">Basic Offer</div>
+<h3>2 Bottles</h3>
+<div class="supply">60 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 2 Bottles" decoding="async" height="1568" loading="lazy" src="images/pricing-package-2-bottles.webp" width="709"/>
+</a>
+<div class="per-price"><span class="amount">$79</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $200</div>
+<div class="guar">✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$358</span> $158</div>
+<div class="ship">+ $9.99 SHIPPING</div>
+</article>
+<article class="price-card best">
+<div class="price-head">BEST OFFER!</div>
+<h3>6 Bottles</h3>
+<div class="supply">180 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 6 Bottles" decoding="async" height="1628" loading="lazy" src="images/pricing-package-6-bottles.webp" width="704"/>
+</a>
+<div class="per-price"><span class="amount">$49</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $780</div>
+<div class="guar">✓ BIGGEST DISCOUNT<br/>✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$1074</span> $294</div>
+<div class="ship">+ FREE US SHIPPING</div>
+</article>
+<article class="price-card">
+<div class="price-head">Most Popular</div>
+<h3>3 Bottles</h3>
+<div class="supply">90 Day Supply</div>
+<a class="price-image-link" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">
+<img alt="Buy Memocept 3 Bottles" decoding="async" height="1563" loading="lazy" src="images/pricing-package-3-bottles.webp" width="707"/>
+</a>
+<div class="per-price"><span class="amount">$69</span><span class="per">PER<br/>BOTTLE</span></div>
+<div class="save">YOU SAVE $330</div>
+<div class="guar">✓ 60 DAYS GUARANTEE</div>
+<a class="buy-btn" href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">🛒 BUY NOW!</a>
+<div class="payment-row">
+<span class="pay">VISA</span><span class="pay">MC</span><span class="pay">DISCOVER</span><span class="pay">AMEX</span>
+</div>
+<div class="total">TOTAL: <span class="old">$537</span> $207</div>
+<div class="ship">+ FREE US SHIPPING</div>
+</article>
+</div>
+</div>
+</section>
+<!-- INTERNAL LINKS -->
+<section class="interlinks">
+<div class="container">
+<ul class="interlinks-grid">
+<li><a href="#memocept-official-website">Memocept Official Website</a></li>
+<li><a href="#what-is-memocept">What Is Memocept?</a></li>
+<li><a href="#how-does-memocept-work">How Does Memocept Work?</a></li>
+<li><a href="#memocept-benefits">Memocept Benefits</a></li>
+<li><a href="#memocept-ingredients">Memocept Ingredients</a></li>
+<li><a href="#order-memocept">Order Memocept</a></li>
+</ul>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p><strong>Disclaimer:</strong> The information on this page is not intended to replace consultation with a qualified healthcare professional. Discuss changes to your supplement routine with your healthcare provider when appropriate.</p>
+<p>Statements regarding this dietary supplement have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult a healthcare professional before use.</p>
+<p>Product descriptions, ingredient names, directions, pricing structure, and guarantee information on this page are based on the supplied Memocept source material. Confirm current terms, shipping, availability, and product directions at checkout and on the label you receive.</p>
+<p class="copyright">© Copyright 2026 Memocept — All Rights Reserved.</p>
+</div>
+</footer>
+<div class="sticky-buy">
+<div class="sticky-inner">
+<div>
+<b>Memocept</b>
+<small>Advanced Cognitive Support</small>
+</div>
+<a href="https://www.apwkk8trk.com/D6ZJJ4/4CF329/?source_id=sarkarisub" rel="nofollow sponsored noopener">Order Now</a>
+</div>
+</div>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger?.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+    hamburger.textContent = navMenu.classList.contains("open") ? "✕" : "☰";
+  });
+
+  navMenu?.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+      if (hamburger) hamburger.textContent = "☰";
+    });
+  });
+</script>
+</body>
+</html>
